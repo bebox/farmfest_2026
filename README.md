@@ -58,3 +58,12 @@ Compile everything and clean generated LaTeX aux files automatically:
 ```bash
 ./build_latex.sh
 ```
+
+## Build LilyPond PDFs
+
+Generate all LilyPond PDFs from the `.ly` files in `lilypond/src_*`.
+The script writes the output PDFs into the matching `lilypond/bin_*` directories and uses `lilypond/config` as the include path.
+
+```bash
+./build_lilypond.sh
+```
