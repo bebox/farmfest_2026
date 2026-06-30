@@ -70,6 +70,22 @@ The script writes the output PDFs into the matching `lilypond/bin_*` directories
 
 ## Build Book Assets
 
+Prerequisite: the `duhovne_pjesme_novi_sad_1966` repo must be checked out alongside this repo in the same parent directory, because `generate_ly_from_mscx.py` uses its `scripts/new/lilypond_generator.py` helper.
+
+Expected layout:
+
+```text
+git/
+  farmfest_2026/
+  duhovne_pjesme_novi_sad_1966/
+```
+
+Repository:
+
+```text
+https://github.com/duhovniprojekt/duhovne_pjesme_novi_sad_1966
+```
+
 Create LilyPond assets from the MuseScore `.mscx` sources for all configured transpositions.
 This script converts `.mscx` to `.ly` and applies LilyPond transformations for derived variants.
 To build the PDFs after regenerating the sources, run `./build_lilypond.sh`.

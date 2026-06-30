@@ -8,10 +8,10 @@ from dataclasses import dataclass
 from typing import Optional
 
 
-LILYPOND_VERSION = "2.23.2"
+LILYPOND_VERSION = "2.24.4"
 
 REPO_ROOT = Path(__file__).resolve().parent
-EXTERNAL_REPO_ROOT = Path("/home/deck/desktop/git/pozitronik")
+EXTERNAL_REPO_ROOT = REPO_ROOT.parent / "duhovne_pjesme_novi_sad_1966"
 LILYPOND_GENERATOR_SCRIPT = EXTERNAL_REPO_ROOT / "scripts" / "new" / "lilypond_generator.py"
 
 
