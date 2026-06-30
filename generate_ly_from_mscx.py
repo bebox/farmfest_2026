@@ -118,10 +118,13 @@ def get_musescore_path() -> str:
     raise RuntimeError("MuseScore executable not found in PATH")
 
 
-MUSESCORE_BIN_PATH = get_musescore_path()
+MUSESCORE_BIN_PATH = None
 
 
 def convert_musescore_to_lilypond(song: Song, transposition: Transposition):
+    global MUSESCORE_BIN_PATH
+    if MUSESCORE_BIN_PATH is None:
+        MUSESCORE_BIN_PATH = get_musescore_path()
     print(f"convert_musescore_to_lilypond: {TCOL.BLUE}{song.ordinal_number}{TCOL.END}, {TCOL.BOLD}{TCOL.GREEN}{song.name}{TCOL.END}")
     musescore_path = get_full_path(f"{transposition.musescore_path}/{song.name}.mscx")
     lilypond_path = get_full_path(f"{transposition.lilypond_path}/{song.name}.ly")

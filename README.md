@@ -80,3 +80,9 @@ python ./generate_ly_from_mscx.py
 ./build_lilypond.sh
 ./build_latex.sh
 ```
+
+Or run the full workflow in one step:
+
+```bash
+./build_all.sh
+```
