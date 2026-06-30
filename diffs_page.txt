@@ -1,0 +1,11 @@
+BTO:
+  -pastir_moje_duse.pdf,2
+  +pastir_moje_duse.pdf,1
+BASS:
+  -pastir_moje_duse.pdf,2
+  +pastir_moje_duse.pdf,1
+EB:
+  -pastir_moje_duse.pdf,2
+  +pastir_moje_duse.pdf,1
+  -to_dade_bog.pdf,1
+  +to_dade_bog.pdf,2
