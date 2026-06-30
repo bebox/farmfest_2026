@@ -67,3 +67,16 @@ The script writes the output PDFs into the matching `lilypond/bin_*` directories
 ```bash
 ./build_lilypond.sh
 ```
+
+## Build Book Assets
+
+Create LilyPond assets from the MuseScore `.mscx` sources for all configured transpositions.
+This script converts `.mscx` to `.ly` and applies LilyPond transformations for derived variants.
+To build the PDFs after regenerating the sources, run `./build_lilypond.sh`.
+To generate the full songbooks for all LaTeX variants, run `./build_latex.sh` after that.
+
+```bash
+python ./generate_ly_from_mscx.py
+./build_lilypond.sh
+./build_latex.sh
+```
