@@ -17,33 +17,33 @@ Main project:
 ```bash
 cd /run/media/deck/desktop/git/farmfest_2026/latex
 mkdir -p build
-xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026.tex
-xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026.tex
+xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_c.tex
+xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_c.tex
 ```
 
 Variant examples:
 
 ```bash
 cd /run/media/deck/desktop/git/farmfest_2026/latex
-xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_Bass.tex
+xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_bass.tex
 
 cd /run/media/deck/desktop/git/farmfest_2026/latex
-xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_BTO.tex
+xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_bto.tex
 
 cd /run/media/deck/desktop/git/farmfest_2026/latex
-xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_Bb.tex
+xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_bb.tex
 
 cd /run/media/deck/desktop/git/farmfest_2026/latex
-xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_Eb.tex
+xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_eb.tex
 
 cd /run/media/deck/desktop/git/farmfest_2026/latex
-xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_Nashville.tex
+xelatex -interaction=nonstopmode -halt-on-error -output-directory build farmfest_2026_nashville.tex
 ```
 
 Output PDF:
 
 ```text
-/run/media/deck/desktop/git/farmfest_2026/latex/build/farmfest_2026.pdf
+/run/media/deck/desktop/git/farmfest_2026/latex/build/farmfest_2026_c.pdf
 ```
 
 Notes:

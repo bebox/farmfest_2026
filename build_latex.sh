@@ -17,11 +17,11 @@ cd "$LATEX_ROOT"
 
 mkdir -p "$BUILD_DIR"
 
-build_tex "farmfest_2026.tex"
-build_tex "farmfest_2026_Bass.tex"
-build_tex "farmfest_2026_BTO.tex"
-build_tex "farmfest_2026_Bb.tex"
-build_tex "farmfest_2026_Eb.tex"
-build_tex "farmfest_2026_Nashville.tex"
+build_tex "farmfest_2026_c.tex"
+build_tex "farmfest_2026_bass.tex"
+build_tex "farmfest_2026_bto.tex"
+build_tex "farmfest_2026_bb.tex"
+build_tex "farmfest_2026_eb.tex"
+build_tex "farmfest_2026_nashville.tex"
 
 find "$BUILD_DIR" -maxdepth 1 -type f \( -name "*.aux" -o -name "*.log" -o -name "*.out" -o -name "*.toc" \) -delete
