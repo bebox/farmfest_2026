@@ -1,0 +1,97 @@
+%Cover page
+\newpage
+\pagenumbering{gobble} 
+\includepdf[pages={1},noautoscale]{\frontcoverpdf}
+
+\newpage
+\pagenumbering{gobble}
+\vspace*{10.7cm}
+%\begin{center}
+%    Inner side of front cover page. Remove!
+%\end{center}
+%\begin{center}
+%    \textit{Unutarnja strana korica.}
+%\end{center}
+
+%Title page
+\newpage
+\pagenumbering{gobble} 
+\thispagestyle {empty}
+%\titleTH
+\includepdf[pages={1},noautoscale]{images/pjesmarica_crni_logo.pdf}
+%=========================================
+%   IMPRESSUM
+%=========================================
+\newpage
+%\centering
+\thispagestyle {empty}
+\pagenumbering{arabic}
+\setcounter{page}{2}
+\begin{center}
+\vspace*{\fill}
+\begin{onehalfspacing}
+%\textbf{\textsf{Impressum}}\\
+%\vspace{10pt}
+\textbf{Naslov:} Farmfest pjesmarica 2026\\
+\vspace{\impresspac}
+%\textbf{Izdanje:} Srpanj 2026.\\
+%\vspace{\impresspac}
+\textbf{Izdavač:} "Riječi Iskrene" Dravska 8, 40305 Pušćine, Hrvatska\\
+\vspace{\impresspac}
+\textbf{Kontakt:} www.farmfest.eu\\
+\vspace{\impresspac}
+\textbf{Zapis nota:} Stjepan i Benjamin Horvat | Lilypond 2.24.4 (http://lilypond.org)\\
+\vspace{\impresspac}
+\textbf{Naslovnica i poleđina:} Ruben Horvat\\
+\vspace{\impresspac}
+\textbf{Logotip:} Mario Jekić\\
+\vspace{\impresspac}
+\textbf{Priprema:} Benjamin Horvat | LaTeX (http://latex-project.org)\\
+\vspace{\impresspac}
+\textbf{Prijevod:} Filip Horvat, Daniel Kreko, Andrea Horvat\\
+\vspace{\impresspac}
+\textbf{Lektura:} Nenad Pijanić, Anja Kovačević\\
+\vspace{\impresspac}
+\textbf{Korektura:} Benjamin Horvat\\
+\vspace{\impresspac}
+\textbf{Fotografije:} Filip Horvat\\
+\vspace{\impresspac}
+\textbf{Tisak:} Stefil d.o.o.\\
+\vspace{\impresspac}
+%Tekst i glazba: Frank Bosch\\
+%\vspace{\impresspac}
+\textbf{Licenca:} Creative Commons—Attribution-ShareAlike 4.0\\
+\vspace{\impresspac}
+%“Farmfest” Dravska 8, 40000 Čakovec, Hrvatska\\
+\vspace{\impresspac}
+\vspace{\impresspac}
+\vspace{\impresspac}
+
+\end{onehalfspacing}
+\end{center}
+
+%=========================================
+%   TOC
+%=========================================
+\newpage
+\begin{adjustwidth*}{2cm}{2cm}
+\renewcommand{\cftsecfont}{\rmfamily}
+\renewcommand{\cftsecpagefont}{\sffamily}
+\renewcommand{\cfttoctitlefont}{\rmfamily\fontsize{50}{60}\selectfont}
+\renewcommand{\contentsname}{
+    {\rmfamily\hfill\doccolor Kazalo \hfill}
+    
+    \vspace*{0.5cm}
+    
+    {\Huge\hfill \textit{Farmfest 2026} \hfill}
+}
+\renewcommand{\cftaftertoctitle}{\vspace*{2cm}}
+\vspace*{1cm}
+{\large{
+\addtocontents{toc}{\protect\enlargethispage{-25mm}}
+%\clearpage
+\tableofcontents}}
+\thispagestyle{empty}
+\end{adjustwidth*}
+
+%\afterpage{\blankpage}
