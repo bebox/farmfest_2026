@@ -100,6 +100,43 @@ def staff_modifier(lines: list, from_str: str, to_str: str):
         lines[line_index] = line
     return lines
 
+def add_nashville_chords(lines: list, transpose_root: str):
+    inserted = False
+    for line_index in range(len(lines)):
+        line = lines[line_index]
+        if line == '    \\new ChordNames { \\jazzChords \\harmonyOne }\n':
+            lines.insert(line_index, f"    \\new ChordNames {{ \\romanChords \\transpose {transpose_root} c \\harmonyOne }}\n")
+            inserted = True
+            break
+    if not inserted:
+        raise ValueError("Could not find jazzChords line for Nashville conversion")
+    return lines
+
+def get_harmony_root(lines: list):
+    in_harmony = False
+    for line in lines:
+        if in_harmony:
+            if line == '}\n':
+                break
+            match = re.search(r"\b([a-z]+)(?::|/|[0-9.]|\s|\|)", line)
+            if match is not None:
+                return match.group(1)
+        elif 'harmonyOne = ' in line:
+            in_harmony = True
+    raise ValueError("Could not find harmony root for Nashville conversion")
+
+def get_key_root(lines: list):
+    for line in lines:
+        match = re.match(r"\s*\\key\s+([a-z]+)\s+\\(major|minor)", line)
+        if match is not None:
+            return match.group(1)
+    return get_harmony_root(lines)
+
+def convert_to_nashville(lines: list):
+    transpose_root = get_key_root(lines)
+    lines = add_nashville_chords(lines, transpose_root)
+    return lines
+
 @app.command()
 def bass_tones_only(path_in: str, path_out: Optional[str] = None):
     print("Bass tones only harmony")
@@ -172,6 +209,22 @@ def transpose_bass(path_in: str, path_out: Optional[str] = None):
             score_modifier(lines, r"\clef bass \transpose c' c" )
             append_to_header(lines, "titlex", "(BASS)")
             staff_modifier(lines, r"\clef treble", r"\clef bass")
+            write_lines_to_file(lines, file_path_out)
+
+@app.command()
+def nashville(path_in: str, path_out: Optional[str] = None):
+    print("Convert to Nashville")
+    if path_out is None: path_out = path_in
+    if is_path_file(path_in):
+        lines = read_lines_from_file(path_in)
+        lines = convert_to_nashville(lines)
+        write_lines_to_file(lines, path_out)
+    else:
+        os.makedirs(path_out, exist_ok=True)
+        for file_path_in in glob.glob(f"{path_in}/*.ly"):
+            file_path_out = f"{path_out}/{os.path.basename(file_path_in)}"
+            lines = read_lines_from_file(file_path_in)
+            lines = convert_to_nashville(lines)
             write_lines_to_file(lines, file_path_out)
 
 

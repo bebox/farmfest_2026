@@ -72,6 +72,15 @@ The script writes the output PDFs into the matching `lilypond/bin_*` directories
 
 Prerequisite: the `duhovne_pjesme_novi_sad_1966` repo must be checked out alongside this repo in the same parent directory, because `generate_ly_from_mscx.py` uses its `scripts/new/lilypond_generator.py` helper.
 
+Python dependency: `typer` is required by `lilypond_generator.py`.
+
+Local setup in this repo:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install typer
+```
+
 Expected layout:
 
 ```text
@@ -87,14 +96,22 @@ https://github.com/duhovniprojekt/duhovne_pjesme_novi_sad_1966
 ```
 
 Create LilyPond assets from the MuseScore `.mscx` sources for all configured transpositions.
-This script converts `.mscx` to `.ly` and applies LilyPond transformations for derived variants.
+This script converts `.mscx` to `.ly` and applies LilyPond transformations for derived variants, including Nashville numbers.
 To build the PDFs after regenerating the sources, run `./build_lilypond.sh`.
 To generate the full songbooks for all LaTeX variants, run `./build_latex.sh` after that.
 
 ```bash
-python ./generate_ly_from_mscx.py
+.venv/bin/python ./generate_ly_from_mscx.py
 ./build_lilypond.sh
 ./build_latex.sh
+```
+
+Final engraving tweaks are kept in a separate manual post-process step so normal regeneration stays predictable.
+This script applies only generic LilyPond text/layout tweaks across all generated `src_*/*.ly` files.
+Run it only when you want to inspect and reapply those generic fixes after regenerating `.ly` sources:
+
+```bash
+python3 ./apply_final_lilypond_tweaks.py
 ```
 
 Or run the full workflow in one step:
