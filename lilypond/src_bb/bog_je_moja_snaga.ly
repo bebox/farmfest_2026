@@ -41,7 +41,7 @@ staffOne = \relative c' {
   h4 )a4 g8 fis4 e8 (~|
   e4 ~e8 ~e8 )e8 e8 (d8 )e8 (|
   e2 )r2 \bar ":|." | \break
-  \markMojPonRight
+  \markMoj
   r4 d'8 d8 d8 d8 d8 d8 |
   e4 d8 d8 ~d4 r4 |
   r4 d8 h8 d4 d8 h8 |

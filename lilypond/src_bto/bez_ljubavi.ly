@@ -32,7 +32,7 @@ staffOne = \relative c' {
   \key d \major
   \time 4/4
   %\tempo 4 = 95
-  \markMoj
+  \bar ".|:" \markMoj
   a'8. fis16 ~fis16 a8. g8. e16 ~e16 g8. |
   fis8. d16 ~d16 fis8. e4 r4 |
   a8. fis16 ~fis16 a8. g8. e16 ~e16 g8. | \break
@@ -41,13 +41,13 @@ staffOne = \relative c' {
   fis'8. g16 ~g16 fis8. e2 | \break
   r1 |
   r1 \bar ":|." | \break
-  \markMojPonRight
+  \markMoj
   d'8. cis16 ~cis16 h8. a8. fis16 ~fis8 e8 ~|
   e8 d4. r4 r8 d8 |
   d'8. cis16 ~cis16 h8. a8. fis16 ~fis8 h8 ~|
   h2 r2 |
   r1 \bar "||" | \break
-  \bar ".|:" \markMojPonn
+  \bar ".|:" \markMoj
   a8. fis16 ~fis16 a8. g8. e16 ~e16 g8. |
   fis8. d16 ~d16 fis8. e4 r4 |
   a8. fis16 ~fis16 a8. g8. e16 ~e16 g8. | \break
@@ -55,8 +55,8 @@ staffOne = \relative c' {
   h8. cis16 ~cis16 d8. cis8. a16 ~a16 h8. |
   fis'8. g16 ~g16 fis8. e2 | \break
   r1 |
-  r1 | \break
-  \markMojPonnn
+  r1 \bar ":|." | \break
+  \bar ".|:" \markMoj
   d'8. cis16 ~cis16 h8. a8. fis16 ~fis8 e8 ~|
   e8 d4. r4 r8 d8 |
   d'8. cis16 ~cis16 h8. a8. fis16 ~fis8 h8 ~|

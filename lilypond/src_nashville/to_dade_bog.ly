@@ -23,10 +23,9 @@ aFourL = {}
   \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
-  system-system-spacing.padding = #2.0
+  %system-system-spacing.padding = #3.2
   %page-breaking = #ly:one-page-breaking
-  %last-bottom-spacing.minimum-distance = #0
-  last-bottom-spacing = #'((basic-distance . 5) (minimum-distance . 4) (padding . 0) (stretchability . 0))
+  %last-bottom-spacing.minimum-distance = #8
 }
 
 staffOne = \relative c' {

@@ -32,7 +32,7 @@ staffOne = \relative c' {
   \key h \major
   \time 4/4
   %\tempo 4 = 95
-  \markMoj
+  \bar ".|:" \markMoj
   fis'8. dis16 ~dis16 fis8. e8. cis16 ~cis16 e8. |
   dis8. h16 ~h16 dis8. cis4 r4 |
   fis8. dis16 ~dis16 fis8. e8. cis16 ~cis16 e8. | \break
@@ -41,13 +41,13 @@ staffOne = \relative c' {
   dis'8. e16 ~e16 dis8. cis2 | \break
   r1 |
   r1 \bar ":|." | \break
-  \markMojPonRight
+  \markMoj
   h'8. ais16 ~ais16 gis8. fis8. dis16 ~dis8 cis8 ~|
   cis8 h4. r4 r8 h8 |
   h'8. ais16 ~ais16 gis8. fis8. dis16 ~dis8 gis8 ~|
   gis2 r2 |
   r1 \bar "||" | \break
-  \bar ".|:" \markMojPonn
+  \bar ".|:" \markMoj
   fis8. dis16 ~dis16 fis8. e8. cis16 ~cis16 e8. |
   dis8. h16 ~h16 dis8. cis4 r4 |
   fis8. dis16 ~dis16 fis8. e8. cis16 ~cis16 e8. | \break
@@ -55,8 +55,8 @@ staffOne = \relative c' {
   gis8. ais16 ~ais16 h8. ais8. fis16 ~fis16 gis8. |
   dis'8. e16 ~e16 dis8. cis2 | \break
   r1 |
-  r1 | \break
-  \markMojPonnn
+  r1 \bar ":|." | \break
+  \bar ".|:" \markMoj
   h'8. ais16 ~ais16 gis8. fis8. dis16 ~dis8 cis8 ~|
   cis8 h4. r4 r8 h8 |
   h'8. ais16 ~ais16 gis8. fis8. dis16 ~dis8 gis8 ~|

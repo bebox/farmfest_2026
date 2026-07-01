@@ -37,7 +37,7 @@ staffOne = \relative c' {
   c4 g'4 fis8 g8 d8 g,8 ~|
   g4 g'4 fis8 g8 fis8 a8 ~|
   a8 g8 fis8 g8 fis8 e8 d8 e8 \bar ":|." | \break
-  \markMojPonRight
+  \markMoj
   r4 g8 g8 fis8 g4 fis8 ~|
   fis8 g4 a8 ~a8 g4. |
   r4 d8 h'8 a8 h4 a8 ~|
@@ -56,8 +56,7 @@ staffOne = \relative c' {
   g2 g2 |
   a2 a2 ~|
   a1 \bar "||" | \break
-  \bar ".|:" \markMojPonn
-  \once \override Score.RehearsalMark.X-offset = #3
+  \bar ".|:" \markMoj
   r4 g4 fis8 g8 fis8 c8 ~|
   c4 g'4 fis8 g8 d8 g,8 ~|
   g4 g'4 fis8 g8 fis8 a8 ~|

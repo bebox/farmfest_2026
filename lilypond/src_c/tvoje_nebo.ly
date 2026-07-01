@@ -42,7 +42,7 @@ staffOne = \relative c' {
   f8 c8 ~c4 r2 |
   r8 es8 es8 d8 es8 d8 es8 c8 ~|
   c2 r2 \bar ":|." | \break
-  \markMojPonRight
+  \markMoj
   r4 b'8 a8 b8 a8 b8 b8 (~|
   b8 c8 ~c4 )r2 |
   r4 d8 c8 d8 c8 d8 d8 (~|
@@ -86,7 +86,7 @@ alignerOneZero = \relative {
   c8 c8 c4) r2 |
   r4 c8 c8 c8 c8 c8 c8( |
   c8 c8 c4) r8 c4 c8 |
-  c2 \tuplet 3/2 {c4 c4 c4 } |
+  c2 \tuplet 3/2 {c4 c4 c4} |
   c2 c4. c8 |
   c8 c8( c4 c8 c8 c8 c8 |
   c1) |
@@ -135,7 +135,7 @@ lyricOneOne = \lyricmode {
   va, __ %|
   ko ro -- sa mi -- ri -- sni cvijet. __ %|
   %|
-  Sve mo -- je "s to" -- bom pre -- bi __ %|
+  Sve mo -- je "s to" -- bom pre -- bi __ %|
   va, __ %|
   Ti si je -- di -- ni svet. __ %|
   %|
