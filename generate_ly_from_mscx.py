@@ -59,30 +59,31 @@ class Song:
     name: str
     ordinal_number: int
     page_orientation: PageOrientation
+    expected_pages: int
 
 song_list = [
-    Song("bez_ljubavi", 1, PageOrientation.Left), #2
+    Song("bez_ljubavi", 1, PageOrientation.Left, 2),
     #slika
 
-    Song("bog_je_moja_snaga", 2, PageOrientation.Left), #1
-    Song("ime_isus", 3, PageOrientation.Right), #1
+    Song("bog_je_moja_snaga", 2, PageOrientation.Left, 1),
+    Song("ime_isus", 3, PageOrientation.Right, 1),
 
-    Song("isus_nazarecanin", 4, PageOrientation.Left), #1
+    Song("isus_nazarecanin", 4, PageOrientation.Left, 1),
     #slika
 
-    Song("pastir_moje_duse", 5, PageOrientation.Left), #2
-    Song("poziv", 6, PageOrientation.Right), #1
+    Song("pastir_moje_duse", 5, PageOrientation.Left, 2),
+    Song("poziv", 6, PageOrientation.Right, 1),
 
-    Song("psalam_42", 7, PageOrientation.Left), #2
+    Song("psalam_42", 7, PageOrientation.Left, 2),
     #slika
 
-    Song("to_dade_bog", 8, PageOrientation.Left), #1
-    Song("tvoje_nebo", 9, PageOrientation.Right), #1
+    Song("to_dade_bog", 8, PageOrientation.Left, 1),
+    Song("tvoje_nebo", 9, PageOrientation.Right, 1),
 
-    Song("u_duhu_budite_gorljivi", 10, PageOrientation.Left), #1
+    Song("u_duhu_budite_gorljivi", 10, PageOrientation.Left, 1),
     #slika
 
-    Song("vidjeh_oblak", 11, PageOrientation.Left), #2
+    Song("vidjeh_oblak", 11, PageOrientation.Left, 2),
     #slika
 ]
 
