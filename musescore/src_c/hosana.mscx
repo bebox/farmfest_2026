@@ -107,6 +107,10 @@
           <style>Composer</style>
           <text>108i</text>
           </Text>
+        <Text>
+          <style>Subtitle</style>
+          <text>Farmfest 2026</text>
+          </Text>
         </VBox>
       <Measure>
         <voice>
@@ -406,6 +410,9 @@
           </voice>
         </Measure>
       <Measure>
+        <LayoutBreak>
+          <subtype>line</subtype>
+          </LayoutBreak>
         <voice>
           <Harmony>
             <root>19</root>

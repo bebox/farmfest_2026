@@ -19,11 +19,11 @@
 
 \usepackage{pgffor, ifthen}
 \newcommand{\notes}[3][\empty]{%
-    \noindent Bilješke\vspace{10pt}\\
+    \noindent Bilješke\par\vspace{10pt}
     \foreach \n in {1,...,#2}{%
         \ifthenelse{\equal{#1}{\empty}}
-            {\rule{#3}{0.5pt}\\}
-            {\rule{#3}{0.5pt}\vspace{#1}\\}
+            {\noindent\rule{#3}{0.5pt}\par}
+            {\noindent\rule{#3}{0.5pt}\par\vspace{#1}}
         }
 }
 
