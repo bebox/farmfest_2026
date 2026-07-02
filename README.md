@@ -114,6 +114,13 @@ Run it only when you want to inspect and reapply those generic fixes after regen
 python3 ./apply_final_lilypond_tweaks.py
 ```
 
+To sync the shared theme color in both LilyPond and LaTeX from one HTML color value, run:
+
+```bash
+python3 ./helper_scripts/sync_theme_color.py --html A03543
+python3 ./helper_scripts/sync_theme_color.py --help
+```
+
 Or run the full workflow in one step:
 
 ```bash

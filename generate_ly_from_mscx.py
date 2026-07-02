@@ -23,6 +23,8 @@ REPO_ROOT = Path(__file__).resolve().parent
 WORKSPACE_ROOT = REPO_ROOT.parent
 EXTERNAL_REPO_ROOT = WORKSPACE_ROOT / "duhovne_pjesme_novi_sad_1966"
 LILYPOND_GENERATOR_SCRIPT = EXTERNAL_REPO_ROOT / "scripts" / "new" / "lilypond_generator.py"
+SYNC_THEME_COLOR_SCRIPT = REPO_ROOT / "helper_scripts" / "sync_theme_color.py"
+THEME_COLOR_HTML = "A03543"
 LILYPOND_VERSION="2.24.4"
 LILYPOND_BIN_PATH="lilypond"
 LILYPOND_CONFIG_PATH = REPO_ROOT / "lilypond" / "config"
@@ -165,6 +167,14 @@ def create_dir_if_not_found(path):
 def quote_path(path):
     return shlex.quote(str(path))
 
+def sync_theme_color():
+    print(f"sync_theme_color: {THEME_COLOR_HTML}")
+    cmd = (
+        f"{quote_path(sys.executable)} {quote_path(SYNC_THEME_COLOR_SCRIPT)} "
+        f"--html {quote_path(THEME_COLOR_HTML)}"
+    )
+    run_bash_cmd(cmd)
+
 def convert_musescore_to_lilypond(song: Song, transposition: Transposition):
     print(f"convert_musescore_to_lilypond: {TCOL.BLUE}{song.ordinal_number}{TCOL.END}, {TCOL.BOLD}{TCOL.GREEN}{song.name}{TCOL.END}")
     musescore_path = get_full_path(f"{transposition.musescore_path}/{song.name}.mscx")
@@ -194,6 +204,7 @@ def transform_lilypond(transposition: Transposition):
     run_bash_cmd(cmd)
 
 if __name__ == "__main__":
+    sync_theme_color()
     for transposition in transposition_list:
         create_dir_if_not_found(get_full_path(transposition.lilypond_path))
         for song in song_list:
