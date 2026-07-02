@@ -118,9 +118,14 @@ def get_harmony_root(lines: list):
         if in_harmony:
             if line == '}\n':
                 break
-            match = re.search(r"\b([a-z]+)(?::|/|[0-9.]|\s|\|)", line)
-            if match is not None:
-                return match.group(1)
+            for token in line.replace("|", " ").split():
+                match = re.match(r"([a-z]+)(?::|/|[0-9.].*)?$", token)
+                if match is None:
+                    continue
+                root = match.group(1)
+                if root == "s":
+                    continue
+                return root
         elif 'harmonyOne = ' in line:
             in_harmony = True
     raise ValueError("Could not find harmony root for Nashville conversion")
