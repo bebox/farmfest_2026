@@ -11,9 +11,9 @@ aFourL = {}
 }
 
 \header {
-  title = "HVALA TI ZA KRIŽ TVOJ"
+  title = "JANJE DOSTOJNO"
   composer = "Darlene Zschech"
-  titlex = "(Worthy Is The Lamb)"
+  titlex = "Worthy Is The Lamb (BASS)"
   style = ""
   broj = "3"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
@@ -209,11 +209,10 @@ lyricOneZero = \lyricmode {
 
 \score {
     <<
-    \new ChordNames { \romanChords \transpose g c \harmonyOne }
-    \new ChordNames { \jazzChords \harmonyOne }
+    \new ChordNames { \jazzChords \clef bass \transpose c' c \harmonyOne }
     \new Staff {
         <<
-        \new Voice { \staffOne }
+        \new Voice { \clef bass \transpose c' c \staffOne }
         \new NullVoice = "alignerOneZero" { \alignerOneZero }
         \new Lyrics \lyricsto "alignerOneZero" { \lyricOneZero }
         >>

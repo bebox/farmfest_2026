@@ -11,9 +11,9 @@ aFourL = {}
 }
 
 \header {
-  title = "HVALA TI ZA KRIŽ TVOJ"
+  title = "JANJE DOSTOJNO"
   composer = "Darlene Zschech"
-  titlex = "(Worthy Is The Lamb) (Sparki)"
+  titlex = "Worthy Is The Lamb (Sparki)"
   style = ""
   broj = "3"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }

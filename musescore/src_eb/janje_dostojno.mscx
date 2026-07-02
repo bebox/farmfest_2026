@@ -101,7 +101,7 @@
         <height>10</height>
         <Text>
           <style>Title</style>
-          <text>Hvala ti za križ tvoj</text>
+          <text>Janje dostojno</text>
           </Text>
         <Text>
           <style>Composer</style>
@@ -109,7 +109,7 @@
           </Text>
         <Text>
           <style>Subtitle</style>
-          <text>(Worthy Is The Lamb)</text>
+          <text>Worthy Is The Lamb</text>
           </Text>
         </VBox>
       <Measure>

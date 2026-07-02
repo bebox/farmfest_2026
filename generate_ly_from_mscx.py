@@ -64,9 +64,9 @@ class Song:
     expected_pages: int
 
 song_list = [
-    Song("hallelujah_story", 1, PageOrientation.Left, 1),
+    Song("haleluja_prica", 1, PageOrientation.Left, 1),
     Song("hosana", 2, PageOrientation.Right, 1),
-    Song("hvala_ti_za_kriz_tvoj", 3, PageOrientation.Left, 2),
+    Song("janje_dostojno", 3, PageOrientation.Left, 2),
 ]
 
 transposition_list = [

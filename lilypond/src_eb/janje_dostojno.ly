@@ -11,9 +11,9 @@ aFourL = {}
 }
 
 \header {
-  title = "HVALA TI ZA KRIŽ TVOJ"
+  title = "JANJE DOSTOJNO"
   composer = "Darlene Zschech"
-  titlex = "(Worthy Is The Lamb) (Bb)"
+  titlex = "Worthy Is The Lamb (Eb)"
   style = ""
   broj = "3"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
@@ -29,52 +29,52 @@ aFourL = {}
 }
 
 staffOne = \relative c' {
-  \key a \major
+  \key e \major
   \time 4/4
   %\tempo 4 = 77
-  r2 cis8 e8 a8 gis8 \bar "||" |
+  r2 gis'8 h8 e8 dis8 \bar "||" |
   \markMoj
-  gis1 |
-  e2 cis8 e8 a8 gis8 |
-  gis1 |
-  e2 cis8 d8 e8 a,8 \bar "||" |
+  dis1 |
+  h2 gis8 h8 e8 dis8 |
+  dis1 |
+  h2 gis8 a8 h8 e,8 \bar "||" |
   \markMoj
-  fis'2 e2 ~|
-  e2 cis8 d8 e8 a,8 |
-  fis'2 e2 |
-  cis2 cis8 d8 e8 gis8 |
-  gis8. a16 ~a8 a8 ~a4. a8 |
-  gis8. a16 ~a8 fis8 ~fis4. fis8 |
-  fis4 fis8 e8 ~e8 cis4 h8 ~|
-  h2 cis8 d8 e8 a,8 \bar "||" |
-  fis'2 e2 ~|
-  e2 cis8 d8 e8 a,8 |
-  fis'2 e2 |
-  cis4. cis8 cis8 d8 e8 gis8 |
-  gis8. a16 ~a8 a8 ~a4. a8 |
-  gis8. a16 ~a8 fis8 ~fis4 fis8 gis8 |
-  a4 a8 a8 ~a4 h8 h8 ~|
-  h1 \bar "||" |
+  cis'2 h2 ~|
+  h2 gis8 a8 h8 e,8 |
+  cis'2 h2 |
+  gis2 gis8 a8 h8 dis8 |
+  dis8. e16 ~e8 e8 ~e4. e8 |
+  dis8. e16 ~e8 cis8 ~cis4. cis8 |
+  cis4 cis8 h8 ~h8 gis4 fis8 ~|
+  fis2 gis8 a8 h8 e,8 \bar "||" |
+  cis'2 h2 ~|
+  h2 gis8 a8 h8 e,8 |
+  cis'2 h2 |
+  gis4. gis8 gis8 a8 h8 dis8 |
+  dis8. e16 ~e8 e8 ~e4. e8 |
+  dis8. e16 ~e8 cis8 ~cis4 cis8 dis8 |
+  e4 e8 e8 ~e4 fis8 fis8 ~|
+  fis1 \bar "||" |
   \markMoj
-  a4 cis8 cis8 ~cis4 a8 h8 ~|
-  h2. r8 h8 |
-  a4 cis8 cis8 ~cis4 e,8 fis8 ~|
-  fis1 |
-  gis4 a8 gis8 ~gis4 fis8 e8 ~|
-  e8 a4 a8 ~a4. gis8 |
-  fis4 a8 a8 ~a4 h8 h8 ~|
-  h1 |
-  a4 cis8 cis8 ~cis4 a8 h8 ~|
-  h1 |
-  a4 cis8 cis8 ~cis4 e,8 fis8 ~|
+  e4 gis8 gis8 ~gis4 e8 fis8 ~|
   fis2. r8 fis8 |
-  gis8 gis8 a8 gis8 ~gis8 fis4 e8 ~|
-  e8 a4 a8 ~a2 ~|
-  a2 r2 |
-  a8 gis8 fis8 gis8 ~gis8 a4. ~|
-  a1 |
-  a8 gis8 fis8 h8 ~h8 a4. ~|
-  a1 |
+  e4 gis8 gis8 ~gis4 h,8 cis8 ~|
+  cis1 |
+  dis4 e8 dis8 ~dis4 cis8 h8 ~|
+  h8 e4 e8 ~e4. dis8 |
+  cis4 e8 e8 ~e4 fis8 fis8 ~|
+  fis1 |
+  e4 gis8 gis8 ~gis4 e8 fis8 ~|
+  fis1 |
+  e4 gis8 gis8 ~gis4 h,8 cis8 ~|
+  cis2. r8 cis8 |
+  dis8 dis8 e8 dis8 ~dis8 cis4 h8 ~|
+  h8 e4 e8 ~e2 ~|
+  e2 r2 |
+  e8 dis8 cis8 dis8 ~dis8 e4. ~|
+  e1 |
+  e8 dis8 cis8 fis8 ~fis8 e4. ~|
+  e1 |
 }
 
 harmonyOne = \chordmode  {

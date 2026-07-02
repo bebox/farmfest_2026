@@ -11,9 +11,9 @@ aFourL = {}
 }
 
 \header {
-  title = "HVALA TI ZA KRIŽ TVOJ"
+  title = "JANJE DOSTOJNO"
   composer = "Darlene Zschech"
-  titlex = "(Worthy Is The Lamb) (Eb)"
+  titlex = "Worthy Is The Lamb"
   style = ""
   broj = "3"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
@@ -29,52 +29,52 @@ aFourL = {}
 }
 
 staffOne = \relative c' {
-  \key e \major
+  \key g \major
   \time 4/4
   %\tempo 4 = 77
-  r2 gis'8 h8 e8 dis8 \bar "||" |
+  r2 h8 d8 g8 fis8 \bar "||" |
   \markMoj
-  dis1 |
-  h2 gis8 h8 e8 dis8 |
-  dis1 |
-  h2 gis8 a8 h8 e,8 \bar "||" |
-  \markMoj
-  cis'2 h2 ~|
-  h2 gis8 a8 h8 e,8 |
-  cis'2 h2 |
-  gis2 gis8 a8 h8 dis8 |
-  dis8. e16 ~e8 e8 ~e4. e8 |
-  dis8. e16 ~e8 cis8 ~cis4. cis8 |
-  cis4 cis8 h8 ~h8 gis4 fis8 ~|
-  fis2 gis8 a8 h8 e,8 \bar "||" |
-  cis'2 h2 ~|
-  h2 gis8 a8 h8 e,8 |
-  cis'2 h2 |
-  gis4. gis8 gis8 a8 h8 dis8 |
-  dis8. e16 ~e8 e8 ~e4. e8 |
-  dis8. e16 ~e8 cis8 ~cis4 cis8 dis8 |
-  e4 e8 e8 ~e4 fis8 fis8 ~|
-  fis1 \bar "||" |
-  \markMoj
-  e4 gis8 gis8 ~gis4 e8 fis8 ~|
-  fis2. r8 fis8 |
-  e4 gis8 gis8 ~gis4 h,8 cis8 ~|
-  cis1 |
-  dis4 e8 dis8 ~dis4 cis8 h8 ~|
-  h8 e4 e8 ~e4. dis8 |
-  cis4 e8 e8 ~e4 fis8 fis8 ~|
   fis1 |
-  e4 gis8 gis8 ~gis4 e8 fis8 ~|
+  d2 h8 d8 g8 fis8 |
   fis1 |
-  e4 gis8 gis8 ~gis4 h,8 cis8 ~|
-  cis2. r8 cis8 |
-  dis8 dis8 e8 dis8 ~dis8 cis4 h8 ~|
-  h8 e4 e8 ~e2 ~|
-  e2 r2 |
-  e8 dis8 cis8 dis8 ~dis8 e4. ~|
+  d2 h8 c8 d8 g,8 \bar "||" |
+  \markMoj
+  e'2 d2 ~|
+  d2 h8 c8 d8 g,8 |
+  e'2 d2 |
+  h2 h8 c8 d8 fis8 |
+  fis8. g16 ~g8 g8 ~g4. g8 |
+  fis8. g16 ~g8 e8 ~e4. e8 |
+  e4 e8 d8 ~d8 h4 a8 ~|
+  a2 h8 c8 d8 g,8 \bar "||" |
+  e'2 d2 ~|
+  d2 h8 c8 d8 g,8 |
+  e'2 d2 |
+  h4. h8 h8 c8 d8 fis8 |
+  fis8. g16 ~g8 g8 ~g4. g8 |
+  fis8. g16 ~g8 e8 ~e4 e8 fis8 |
+  g4 g8 g8 ~g4 a8 a8 ~|
+  a1 \bar "||" |
+  \markMoj
+  g4 h8 h8 ~h4 g8 a8 ~|
+  a2. r8 a8 |
+  g4 h8 h8 ~h4 d,8 e8 ~|
   e1 |
-  e8 dis8 cis8 fis8 ~fis8 e4. ~|
-  e1 |
+  fis4 g8 fis8 ~fis4 e8 d8 ~|
+  d8 g4 g8 ~g4. fis8 |
+  e4 g8 g8 ~g4 a8 a8 ~|
+  a1 |
+  g4 h8 h8 ~h4 g8 a8 ~|
+  a1 |
+  g4 h8 h8 ~h4 d,8 e8 ~|
+  e2. r8 e8 |
+  fis8 fis8 g8 fis8 ~fis8 e4 d8 ~|
+  d8 g4 g8 ~g2 ~|
+  g2 r2 |
+  g8 fis8 e8 fis8 ~fis8 g4. ~|
+  g1 |
+  g8 fis8 e8 a8 ~a8 g4. ~|
+  g1 |
 }
 
 harmonyOne = \chordmode  {
@@ -207,92 +207,6 @@ lyricOneZero = \lyricmode {
   %|
 }
 
-alignerOneOne = \relative {
-  r2 r8 r8 r8 r8 |
-  r1 |
-  r2 r8 r8 r8 r8 |
-  r1 |
-  r2 c8 c8 c8 c8 |
-  c2 c2( |
-  c2) c8 c8 c8 c8 |
-  c2 c2 |
-  c2 c8 c8 c8 c8 |
-  c8. c16( c8) c8( c4.) c8 |
-  c8. c16( c8) c8( c4.) c8 |
-  c4 c8 c8 r8 c4 c8( |
-  c2) c8 c8 c8 c8 |
-  c2 c2( |
-  c2) c8 c8 c8 c8 |
-  c2 c2 |
-  c4.( c8) c8 c8 c8 c8 |
-  c8. c16( c8) c8( c4.) c8 |
-  c8. c16( c8) c8( c4) c8 c8 |
-  c4 c8 c8( c4) c8 c8( |
-  c1) |
-  c4 c8 c8( c4) c8 c8( |
-  c2.) r8 r8 |
-  c4 c8 c8( c4) c8 c8( |
-  c1) |
-  c4 c8 c8( c4) c8 c8 |
-  r8 c4 c8( c4.) c8 |
-  c4 c8 c8 r4 c8 c8( |
-  c1) |
-  c4 c8 c8 r4 c8 c8( |
-  c1) |
-  c4 c8 c8( c4) c8 c8( |
-  c2.) r8 c8 |
-  c8 c8 c8 c8 r8 c4 c8 |
-  r8 c4 c8( c2 |
-  c2) r2 |
-  c8 c8 c8 c8( c8) c4.( |
-  c1) |
-  c8 c8 c8 c8( c8) c4.( |
-  c1) |
-}
-
-lyricOneOne = \lyricmode {
-  %|
-  %|
-  %|
-  %|
-  Thank you for the %|
-  cross Lord __ %|
-  Thank you for the %|
-  price You %|
-  paid Bea -- ring all my %|
-  sin and __ shame __ In %|
-  love You __ came __ And %|
-  gave a -- ma -- zing grace __ %|
-  Thank you for this %|
-  love Lord __ %|
-  Thank you for the %|
-  nail pierced %|
-  hands __ Washed me in Your %|
-  clean -- sing __ flow __ Now %|
-  all I __ know __ Your for -- %|
-  give -- ness and __ em -- brace __ %|
-  %|
-  Wor -- thy is __ the Lamb __ %|
-  %|
-  Sea -- ted on __ the throne __ %|
-  %|
-  Crown You now __ with ma -- %|
-  ny crowns __ You %|
-  reign vic -- to -- ri -- ous __ %|
-  %|
-  High and lif -- ted up __ %|
-  %|
-  Je -- sus Son __ of God __ %|
-  The %|
-  Dar -- ling of Hea -- ven cru -- %|
-  ci -- fied __ %|
-  %|
-  Wor -- thy is the __ Lamb __ %|
-  %|
-  Wor -- thy is the __ Lamb __ %|
-  %|
-}
-
 \score {
     <<
     \new ChordNames { \jazzChords \harmonyOne }
@@ -301,8 +215,6 @@ lyricOneOne = \lyricmode {
         \new Voice { \staffOne }
         \new NullVoice = "alignerOneZero" { \alignerOneZero }
         \new Lyrics \lyricsto "alignerOneZero" { \lyricOneZero }
-        \new NullVoice = "alignerOneOne" { \alignerOneOne }
-        \new Lyrics \lyricsto "alignerOneOne" { \lyricOneOne }
         >>
     }
     >>

@@ -11,8 +11,9 @@ aFourL = {}
 }
 
 \header {
-  title = "HALLELUJAH STORY"
+  title = "HALELUJA PRIČA"
   composer = "John Van Deusen"
+  titlex = "Hallelujah Story (Eb)"
   style = ""
   broj = "1"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
@@ -30,41 +31,41 @@ aFourL = {}
 staffOne = \relative c' {
   \time 4/4
   %\tempo 4 = 130
-  r2 r4 h'4 \bar "||" |
+  r2 r4 fis'4 \bar "||" |
   \markMoj
-  a4 fis4 d4 e4 ~|
-  e2 e8 fis8 e8 d8 |
-  e2 e8 fis8 e8 d8 |
-  h2. h'4 |
-  a4 fis4 d4 e4 ~|
-  e2 g8 fis8 e8 d8 |
-  d4. e8 ~e4 h4 ~|
-  h8 d4. a4 h'4 |
+  e4 cis4 a4 h4 ~|
+  h2 h8 cis8 h8 a8 |
+  h2 h8 cis8 h8 a8 |
+  fis2. fis'4 |
+  e4 cis4 a4 h4 ~|
+  h2 d8 cis8 h8 a8 |
+  a4. h8 ~h4 fis4 ~|
+  fis8 a4. e4 fis'4 |
   \bar ".|:" \markMoj
-  a4 fis4 d4 e4 ~|
-  e4. a,8 e'8 fis8 e8 d8 |
-  e4. a,8 e'8 fis8 e8 d8 |
-  h2. h'4 |
-  a4 fis4 d4 e4 ~|
-  e4 a,8 a8 g'8 fis8 e8 d8 |
-  d1 |
-  r2 r4 d'4 \bar ":|." |
+  e4 cis4 a4 h4 ~|
+  h4. e,8 h'8 cis8 h8 a8 |
+  h4. e,8 h'8 cis8 h8 a8 |
+  fis2. fis'4 |
+  e4 cis4 a4 h4 ~|
+  h4 e,8 e8 d'8 cis8 h8 a8 |
+  a1 |
+  r2 r4 a'4 \bar ":|." |
   \bar ".|:" \markMoj
-  d4 a4 d4 e4 ~|
-  e2 e8 fis8 e8 d8 |
-  e2 e8 fis8 e8 d8 |
-  h2. d4 |
-  d4 a4 d4 e4 ~|
-  e4. d8 g8 fis8 e8 d8 |
-  d1 \bar ":|." |
+  a4 e4 a4 h4 ~|
+  h2 h8 cis8 h8 a8 |
+  h2 h8 cis8 h8 a8 |
+  fis2. a4 |
+  a4 e4 a4 h4 ~|
+  h4. a8 d8 cis8 h8 a8 |
+  a1 \bar ":|." |
   \bar ".|:" \markMoj
-  d2 d4. a8 |
-  d8 d4 d8 ~d8 d4 d8 (~|
-  d8 e8 )e2. |
+  a2 a4. e8 |
+  a8 a4 a8 ~a8 a4 a8 (~|
+  a8 h8 )h2. |
   r1 |
-  a8 a4 a8 ~a8 fis4 fis8 ~|
-  fis8 fis4 g8 ~g8 fis4 fis8 (~|
-  fis8 e8 )e2. |
+  e8 e4 e8 ~e8 cis4 cis8 ~|
+  cis8 cis4 d8 ~d8 cis4 cis8 (~|
+  cis8 h8 )h2. |
   r1 \bar ":|." |
 }
 
